@@ -393,7 +393,7 @@ namespace Tinybit {
 		list[i] = Math.floor(d / 40);
 	}
 	list.sort();
-	let length = (list[2] + list[3] + list[4])/3;
+	let length = (list[5] + list[6] + list[7])/3;
 	return  Math.floor(length);
     }
 
