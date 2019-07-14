@@ -381,7 +381,7 @@ namespace Tinybit {
     export function Ultrasonic_Car(): number {
 
        let list:Array<number> = [0, 0, 0, 0, 0 ,0 ,0 ,0 ,0 ,0];
-	for (let i = 0; i < 10; i++)
+	for (let i = 0; i < 7; i++)
 	{
 		pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
 		pins.digitalWritePin(DigitalPin.P16, 0);
@@ -393,7 +393,7 @@ namespace Tinybit {
 		list[i] = Math.floor(d / 40);
 	}
 	list.sort();
-	let length = (list[3] + list[4] + list[5] + list[6])/4;
+	let length = (list[2] + list[3] + list[4])/3;
 	return  Math.floor(length);
     }
 
